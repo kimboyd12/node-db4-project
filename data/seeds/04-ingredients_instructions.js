@@ -1,0 +1,17 @@
+
+exports.seed = function(knex) {
+      return knex('ingredients_instructions').insert([
+        {ingredient_id: 1, recipe_id: 1, quantity: 1},
+        {ingredient_id: 3, recipe_id: 1, quantity: 1},
+        {ingredient_id: 5, recipe_id: 1, quantity: 2},
+
+        {ingredient_id: 2, recipe_id: 2, quantity: 1},
+        {ingredient_id: 5, recipe_id: 2, quantity: 2},
+        {ingredient_id: 6, recipe_id: 2, quantity: 5},
+        {ingredient_id: 3, recipe_id: 2, quantity: 1},
+
+        {ingredient_id: 3, recipe_id: 3, quantity: 3},
+        {ingredient_id: 7, recipe_id: 3, quantity: 1},
+        {ingredient_id: 4, recipe_id: 3, quantity: 1},
+      ]);
+    };
